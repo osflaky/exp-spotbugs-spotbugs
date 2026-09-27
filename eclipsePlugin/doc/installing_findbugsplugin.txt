@@ -1,0 +1,93 @@
+Here is how to install and use the Find Bugs Eclipse Plug-in:
+
+NOTE: Since FindBugs requires a JDK 11.0.x to run on, you MUST ENSURE that you
+start Eclipse using a JRE/JDK 11.0.x (or later) as well.
+
+Install the plug-in
+===================================================
+1) Extract the contents of the file
+   - edu.umd.cs.findbugs.plugin.eclipse_4.9.4.r202508080258-e36f44a.zip
+   into the [plugins] folder of your Eclipse installation. This should result in
+   the following directory structure:
+   <eclipse-dir>
+   |
+   +- plugins
+      |
+      +- edu.umd.cs.findbugs.plugin.eclipse_4.9.4.r202508080258-e36f44a
+         |
+         +- plugin.xml
+            +- doc
+            +- icons
+            +- lib
+            |  |
+            |  +- asm-9.8.jar
+            |     asm-analysis-9.8.jar
+            |     asm-commons-9.8.jar
+            |     asm-tree-9.8.jar
+            |     asm-util-9.8.jar
+            |     bcel-6.11.jar
+            |     commons-lang3-3.18.0.jar
+            |     commons-text-1.14.0.jar
+            |     dom4j-2.2.0.jar
+            |     error_prone_annotatoins-2.38.0.jar
+            |     gson-2.13.1.jar
+            |     jaxen-2.0.0.jar
+            |     jcip-annotations-1.0-1.jar
+            |     jsr305-3.0.2.jar
+            |     log4j-api-2.25.1.jar
+            |     log4j-core-2.25.1.jar
+            |     slf4j-api-2.0.17.jar
+            |     spotbugs.jar
+            |     spotbugs-annotations.jar
+            |     xmlresolver-5.3.3.jar
+            |     xmlresolver-5.3.3-data.jar
+            |
+            +- META-INF
+            |  |
+            |  +- MANIFEST.MF
+            |
+            +- OSGI-INF
+            +- plugin
+            .options
+            about.html
+            about.ini
+            about.properties
+            FindBugs.png
+            plugin.xml
+            RELEASENEOTES
+            smallBuggy.png
+            spotbugs.png
+            spotbugs-plugin.jar
+
+
+2) (Re-)start Eclipse
+
+
+Using the plug-in
+==================
+The plug-in can operate in two modes: the automatic mode and the manual mode.
+
+Automatic mode
+---------------
+When running in automatic mode, the plug-in will look for bug patterns every time
+you build your project or a single Java file. This means that (normally) every
+time you save a Java file, the FindBugs plug-in will scan this file for bugs.
+
+To enable the automatic mode:
+1) Open the context menu of a Java project (please go to the Java perspective first!)
+2) Select [Properties] from the context menu
+3) In the properties dialog, switch to the [FindBugs} section and
+4) Check the [Run FindBugs automatically] option.
+5) Click [OK] or [Apply] to persist your change.
+
+Manual mode
+------------
+Since running the FindBugs plug-in in automatic mode can be vey time-consuming,
+you may choose to run the plug-in in manual mode. As the name implies, you
+have to start the bug pattern detection manually when the plug-in is in manual mode.
+
+To enable manual mode:
+1) Make sure that the [Run FindBugs automatically] checkbox on the Java project properties
+   page is disabled.
+2) Open the context menu of the current Java project.
+3) Select [Find Bugs -> Find Bugs]. The bug pattern detection process will be started.
