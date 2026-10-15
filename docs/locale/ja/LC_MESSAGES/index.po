@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2019, spotbugs community
+# This file is distributed under the same license as the spotbugs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr "Project-Id-Version: spotbugs 3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-17 15:12+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+
+#: ../../index.rst:7
+msgid "SpotBugs manual"
+msgstr "SpotBugsマニュアル"
+
+#: ../../index.rst:9
+msgid ""
+"This manual is licensed under the Creative Commons Attribution-"
+"NonCommercial-ShareAlike License. To view a copy of this license, visit "
+"`creativecommons.org <https://creativecommons.org/licenses/by-nc-sa/1.0/>`_ or send a letter to "
+"Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA."
+msgstr "このマニュアルはCreative Commons Attribution-NonCommercial-ShareAlike Licenseの下で使用許諾されています。この使用許諾のコピーを見るためには `creativecommons.org <https://creativecommons.org/licenses/by-nc-sa/1.0/>`_ を参照するかCreative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USAに書簡を送付してください。"
+
+#: ../../index.rst:12
+msgid ""
+"The name FindBugs and the FindBugs logo are trademarked by the University"
+" of Maryland."
+msgstr "FindBugsという名称とFindBugsのロゴはメリーランド大学の商標です。"
+
+#: ../../index.rst:15
+msgid "Indices and tables"
+msgstr "索引とテーブル"
+
+#: ../../index.rst:17
+msgid ":ref:`search`"
+msgstr ""
+
+#: ../../index.rst:20
+msgid "Contents"
+msgstr "目次"
+

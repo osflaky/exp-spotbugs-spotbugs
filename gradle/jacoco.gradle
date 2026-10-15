@@ -1,0 +1,22 @@
+apply plugin: 'jacoco'
+
+jacoco {
+  toolVersion = '0.8.15'
+}
+
+jacocoTestReport {
+  reports {
+    html.required = true
+    xml.required = true
+  }
+}
+
+test {
+  jacoco {
+    includeNoLocationClasses = true
+    // https://github.com/gradle/gradle/issues/5184#issuecomment-391982009
+    excludes = ['jdk.internal.*']
+  }
+}
+
+tasks.test.finalizedBy jacocoTestReport
